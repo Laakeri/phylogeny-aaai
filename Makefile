@@ -1,7 +1,7 @@
-CPLEXDIR = /home/local/tukotu/cplex-install
+CPLEXDIR = /home/EXAMPLE/cplex-install
 export CPLEXDIR
 
-all: bt-maxsat minsep_ip phylgen convert
+all: bt-maxsat minsep_ip bin_ip phylgen convert
 
 bt-maxsat:
 	$(MAKE) -C bt-maxsat all
@@ -18,11 +18,15 @@ convert: convert.cpp
 minsep_ip:
 	$(MAKE) -C minsep_ip all
 
+bin_ip:
+	$(MAKE) -C bin_ip all
+
 clean:
 	$(MAKE) -C bt-maxsat clean
 	$(MAKE) -C minsep_ip clean
+	$(MAKE) -C bin_ip clean
 	rm -f msdir/ms
 	rm -f phylgen
 	rm -f convert
 
-.PHONY: all bt-maxsat minsep_ip clean
+.PHONY: all bt-maxsat minsep_ip bin_ip clean
