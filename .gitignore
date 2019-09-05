@@ -1,3 +1,9 @@
 bt-maxsat/triangulator
 *.o
 *.d
+MaxHS-3.0/build/*
+phyltemp
+phylgen
+convert
+seedms
+

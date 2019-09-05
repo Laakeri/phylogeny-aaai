@@ -87,7 +87,7 @@ bool MaxhsInterface::Solve() {
   out<<std::endl;
   out.close();
   utils::DisableStdout();
-  assert(0 == system(("./solvers/MaxHS/build/release/bin/maxhs " + tmp_file_in + " > " + tmp_file_out).c_str()));
+  assert(0 == system(("./MaxHS-3.0/build/release/bin/maxhs " + tmp_file_in + " > " + tmp_file_out).c_str()));
   utils::ReEnableStdout();
   std::ifstream in(tmp_file_out);
   std::vector<int> out_solution;
