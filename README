@@ -28,3 +28,8 @@ second set of experiments. alcataenia, chinese, indo, indo-pp and mammals are
 the real-world benchmarks that we used.
 
 
+Example usage of PBO to compute maximum compatibility:
+
+./pbo.sh instances/mammals.phy
+
+

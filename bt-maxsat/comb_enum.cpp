@@ -142,6 +142,7 @@ std::vector<std::vector<int>> MinSepsRemoved(const Graph& graph, const std::vect
   utils::SortAndDedup(minseps);
   return minseps;
 }
+} // namespace
 
 std::vector<std::vector<int>> FindMinSeps(const Graph& graph) {
   std::vector<std::vector<int>> minseps;
@@ -178,7 +179,6 @@ std::vector<std::vector<int>> FindMinSeps(const Graph& graph) {
   std::sort(minseps.begin(), minseps.end());
   return minseps;
 }
-} // namespace
 
 std::vector<std::vector<int>> Pmcs(const Graph& graph) {
   if (graph.n() == 0) return {};

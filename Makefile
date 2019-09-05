@@ -1,4 +1,7 @@
-all: bt-maxsat phylgen convert
+CPLEXDIR = /home/local/tukotu/cplex-install
+export CPLEXDIR
+
+all: bt-maxsat minsep_ip phylgen convert
 
 bt-maxsat:
 	$(MAKE) -C bt-maxsat all
@@ -12,10 +15,14 @@ phylgen: msdir/ms phylgen.cpp
 convert: convert.cpp
 	g++ convert.cpp -o convert -std=c++11 -O2 -Wall -Wextra -Wshadow -g -Wfatal-errors
 
+minsep_ip:
+	$(MAKE) -C minsep_ip all
+
 clean:
 	$(MAKE) -C bt-maxsat clean
+	$(MAKE) -C minsep_ip clean
 	rm -f msdir/ms
 	rm -f phylgen
 	rm -f convert
 
-.PHONY: all bt-maxsat clean
+.PHONY: all bt-maxsat minsep_ip clean
