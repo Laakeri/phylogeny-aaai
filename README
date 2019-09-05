@@ -2,6 +2,8 @@ This folder contains the necessary code and test data to reproduce the
 experiments in AAAI 2020 submission #7649, "Finding Most Compatible Phylogenetic 
 Trees over Multi-State Characters".
 
+The instance specific experiment results are in results/ directory.
+
 Installing:
 
 1. You need to have CPLEX installed. It is the only component not included here.

@@ -1,0 +1,7 @@
+instance,broken_chars,minsep_ip,bt-maxsat,bin_ip,pbo
+instances/alcataenia.phy,5,0.11,0.31,0.02,0.82
+instances/chinese.phy,6,0.03,0.13,0.02,0.61
+instances/indo.phy,13,82800.0,21159.45,2.02,82800.0
+instances/indo-pp.phy,6,0.06,0.12,0.04,6.43
+instances/mammals.phy,78,2.59,1.33,0.2,23.26
+totals,-,4,5,5,4
