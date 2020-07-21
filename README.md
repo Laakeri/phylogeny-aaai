@@ -1,3 +1,6 @@
+Note: An improved implementation is available in [https://github.com/Laakeri/triangulator-msc](https://github.com/Laakeri/triangulator-msc).
+
+
 This folder contains the necessary code and test data to reproduce the 
 experiments in AAAI 2020 paper, "Finding Most Compatible Phylogenetic 
 Trees over Multi-State Characters".
